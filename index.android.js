@@ -91,17 +91,15 @@ class forecast_react extends Component {
                     source={require('./img/ecuador-weather-1.jpg')}
                     style={styles.backdrop}>
                     <View style={styles.overlay}>
-                        <View>
-                            <Text style={styles.mainText}>
-                                Current weather for:
-                            </Text>
-                            <View style={styles.zipContainer}>
-                                <TextInput
-                                    placeholder="City name"
-                                    style={[styles.zipCode, styles.mainText]}
-                                    returnKeyType='go'
-                                    onSubmitEditing={this._handleTextChange}/>
-                            </View>
+                        <Text style={styles.mainText}>
+                            Current weather for:
+                        </Text>
+                        <View style={styles.zipContainer}>
+                            <TextInput
+                                placeholder="City name"
+                                style={[styles.zipCode, styles.mainText]}
+                                returnKeyType='go'
+                                onSubmitEditing={this._handleTextChange}/>
                         </View>
                         {content}
                     </View>
